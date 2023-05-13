@@ -17,3 +17,5 @@ This is weather application build with open weather API. 🌄
 ## 📌 Navigate to the recent locations
      🔹By clicking on list item you will directly navigated to that locations
      
+# visit 
+https://knowweathertuku.netlify.app/
