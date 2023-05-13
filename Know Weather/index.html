@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <script defer src="index.js"></script>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <!-- background div -->
+        <div class="background">
+            <img src="images/mountain1.png" alt="montain image" class="back-image">
+        </div>
+
+        <!-- navbar -->
+
+        <nav class="navbar">
+            <div class="search-container">
+                <input type="text" id="search-box" placeholder="search city here..">
+                <button id="btn"><img src="images/search.png" alt=""> </button>
+            </div>
+        </nav>
+        <div class="show-info">
+            <div class="map-card">
+                <div id="map"></div>
+                <div class="recent-view">
+                    <p>Recently Visited Locations</p>
+                    <ul id="recent-locations">
+
+                        <!-- <li class="location">
+                            <h2 id="location-title">Pune</h2>
+                            <div class="location-temps">
+                                <div class="temp-min">
+                                    <span>Min Temp :</span>
+                                    <span><span id="mintemp">23</span><sup>°</sup>C</span>
+                                </div>
+                                <div class="temp-max">
+                                    <span>Min Temp :</span>
+                                    <span><span id="mintemp">23</span><sup>°</sup>C</span>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card1">
+                    <div class="description">
+                        <img id="descripImg" src="images/Clear.png" alt="">
+                        <span id="description">Haze</span>
+                    </div>
+                    <div class="tempNumeric">
+                        <p><span id="tempNumeric">23</span><sup>°</sup>C</p>
+                    </div>
+                    <div class="city-info">
+                        <div class="city">
+                            <span id="cityname">Pune</span>
+                            <span id="countryName">, IN</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="info-card2">
+                    <div class="other-info">
+
+                        <div class="other-info1">
+                            <div class="wind-speed"><img src="images/icons8-wind-60.png" alt=""><span
+                                    id="windspeed">23</span>
+                                <span> m/s</span>
+                            </div>
+                            <div class="humedity"><img src="images/icons8-humidity-60.png" alt="">
+                                <span id="humidity">51</span><span>
+                                    %
+                                </span>
+                            </div>
+                        </div>
+                        <div class="other-info2">
+                            <div class="pressure"><img src="images/icons8-atmospheric-pressure-60.png" alt=""><span
+                                    id="pressure">1011</span><span> hPa</span></div>
+                            <div class="visibility"><img src="images/icons8-eye-60.png" alt=""><span
+                                    id="visibility">1011</span><span> m</span></div>
+                        </div>
+
+                    </div>
+                    <div class="forecasts">
+                        <p class="foretitle">5 Day Forecast</p>
+                        <ul class="forecast" id="ulforecast">
+                            <!-- <li class="days">
+                                <div class="daytitile"><span id="day1">Mon</span></div>
+                                <div class="foredescripimg"><img id="foredescripimage"
+                                        src="images//Clouds.png" alt=""></div>
+                                <div class="foredescrip">
+                                    <span id="foredescription">Haze</span>
+                                </div>
+
+                                <div class="foretemp">
+                                    <p><span id="foretemp">23</span><sup>°</sup>C</p>
+                                </div>
+
+                            </li> -->
+
+                        </ul>
+
+
+                    </div>
+                    <div class="date-time-container">
+
+                        <div class="date-time">
+                            <p id="time">20:30</p>
+                            <p><span id="todaydate">4</span> <span id="day">Friday</span> , <span id="month">Feb</span>
+                                <span id="year">2023</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

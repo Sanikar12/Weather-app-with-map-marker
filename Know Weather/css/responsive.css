@@ -1,0 +1,191 @@
+@media screen and (max-width:480px) {
+    .main {
+        width: 100%;
+        height: 130.5vh;
+        /* background-image: url("images/description/mobmountain.jpg") !important; */
+    }
+
+    .background {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .background img {
+
+        width: auto;
+        margin-bottom: 0;
+
+    }
+
+    .show-info {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 120vh;
+        margin-bottom: 1vh;
+
+
+    }
+
+    .info-card {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 90%;
+        border-bottom: none;
+    }
+
+    .info-card1 {
+        width: 100%;
+        height: 40%;
+    }
+
+    .info-card2 {
+        width: 100%;
+        height: 60%;
+        margin-bottom: 0;
+    }
+
+    .search-container {
+        width: 80%;
+    }
+
+    .map-card {
+        width: 80%;
+        height: 50%;
+        margin-left: 2.3rem;
+    }
+
+    .recent-view p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .info-card {
+        height: 80vh;
+        margin-top: 1rem;
+    }
+
+    .description {
+        font-size: 2.3rem;
+        height: 35%;
+    }
+
+    .description span {
+        top: 1.6rem;
+        left: 9rem;
+    }
+
+    .description img {
+        top: 0.5rem;
+        left: 0.5;
+        width: 6rem;
+        height: 5rem;
+    }
+
+    .tempNumeric {
+        height: 40%;
+    }
+
+    .tempNumeric p {
+        top: 1rem;
+        font-size: 3rem;
+        left: 5rem;
+
+    }
+
+    .city-info {
+        height: 25%;
+    }
+
+    .city {
+        top: 0.1rem;
+        font-size: 1.5rem;
+        left: 5rem;
+        margin-bottom: 0.5rem;
+
+    }
+
+    .other-info1,
+    .other-info2 {
+        width: 50%;
+        height: 100%;
+
+    }
+
+    .wind-speed span,
+    .humedity span,
+    .pressure span,
+    .visibility span {
+        font-size: 1rem;
+    }
+
+    .wind-speed img,
+    .humedity img,
+    .pressure img,
+    .visibility img {
+        transform: scale(0.4);
+    }
+
+    .other-info {
+        width: 100%;
+        height: 40%;
+
+    }
+
+    .forecast {
+        height: 100%;
+
+    }
+
+    .days {
+        height: 95%;
+    }
+
+    .daytitile {
+        font-size: 1.3rem;
+    }
+
+    .foredescripimg {
+        width: 40%;
+        height: 30%;
+        margin: auto;
+    }
+
+    .foretemp {
+        font-size: 0.7rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+
+
+
+    .date-time-container {
+        height: 1rem;
+        display: none;
+    }
+
+    #recent-locations {
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+    }
+
+
+    #location-title {
+        font-size: 1rem;
+    }
+
+    .temp-min,
+    .temp-max {
+        font-size: 0.7rem;
+    }
+
+    #recent-locations {
+        height: 75%;
+    }
+}

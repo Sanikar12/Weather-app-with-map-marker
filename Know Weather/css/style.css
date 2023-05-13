@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+body,
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.back-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* shade on background image */
+.background::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(135, 206, 235, 0.3);
+}
+
+/* nav bar */
+.navbar {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+
+
+}
+
+.search-container {
+    height: 70%;
+    width: 20%;
+    margin-top: 3px;
+}
+
+#search-box {
+    height: 100%;
+    width: 80%;
+    background: rgb(255, 255, 255, 0.8);
+
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+}
+
+.search-container button {
+    height: 100%;
+    width: 15%;
+    float: right;
+    background: rgb(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 60px;
+
+}
+
+.search-container button img {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.6);
+
+}
+
+
+.search-container button:hover {
+    cursor: pointer;
+    background: rgb(255, 255, 255, 0.9);
+
+}
+
+/* information cards */
+.show-info {
+    top: 10vh;
+    left: 2.5%;
+    position: absolute;
+    width: 95%;
+    height: 85vh;
+    display: flex;
+}
+
+
+.info-card {
+    /* flex: 1; */
+    width: 60%;
+    margin: 1rem;
+    background-color: rgba(135, 206, 235, 0.6);
+    border-radius: 3%;
+    display: flex;
+    border: 2px solid #66d3fa;
+
+
+}
+
+.info-card1 {
+    /* flex: 1; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.description {
+    height: 30%;
+    color: white;
+    font-size: 55px;
+    position: relative;
+
+}
+
+.description span {
+    position: absolute;
+    top: 5rem;
+    left: 13rem;
+}
+
+.description img {
+
+    position: absolute;
+    /* transform: scale(0.2); */
+    width: 9rem;
+    height: 8rem;
+    top: 2rem;
+    left: 2rem;
+    border: 2px solid #66d3fa;
+    padding: 0.5rem;
+    border-radius: 30px;
+
+}
+
+
+
+.tempNumeric {
+    height: 50%;
+    position: relative;
+
+}
+
+.tempNumeric p {
+    position: absolute;
+    color: white;
+    font-size: 160px;
+    left: 2rem;
+    /* top: 1rem; */
+}
+
+.city-info {
+    height: 20%;
+    position: relative;
+}
+
+.city {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    left: 3rem;
+
+}
+
+
+
+.info-card2 {
+    /* flex: 1; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.other-info {
+    height: 35%;
+    width: 95%;
+    display: flex;
+
+}
+
+.other-info1,
+.other-info2 {
+    width: 50%;
+    height: 100%;
+
+}
+
+.wind-speed,
+.humedity,
+.pressure,
+.visibility {
+    width: 98%;
+    height: 38%;
+    margin-top: 9%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #66d3fa; */
+    background-color: rgb(101, 221, 239, 0.9);
+    gap: 5px;
+}
+
+.wind-speed span,
+.humedity span,
+.pressure span,
+.visibility span {
+    color: rgb(30, 48, 80);
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.wind-speed img,
+.humedity img,
+.pressure img,
+.visibility img {
+    transform: scale(0.7);
+}
+
+
+
+
+.date-time-container {
+    height: 20%;
+    width: 95%;
+    position: relative;
+
+}
+
+.date-time {
+    position: absolute;
+    /* color: rgb(30, 48, 80); */
+    color: white;
+    font-size: 25px;
+    top: 2.5rem;
+    left: 2rem;
+
+}
+
+/* map card */
+.map-card {
+    width: 40%;
+    /* flex: 1; */
+    margin: 1rem;
+}
+
+#map {
+    width: 100%;
+    height: 60%;
+    border-radius: 30px;
+    border: 5px solid #66d3fa;
+}
+
+/* recent views */
+.recent-view {
+    width: 100%;
+    height: 38%;
+    border-radius: 30px;
+    margin: 0.5rem;
+    background-color: rgba(135, 206, 235, 0.9);
+    border: 2px solid #66d3fa;
+
+
+}
+
+.recent-view p {
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+    border-radius: 30px;
+
+
+}
+
+
+/* recent locations */
+#recent-locations {
+    width: 90%;
+    height: 85%;
+    margin: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+#recent-locations::-webkit-scrollbar {
+    width: 0;
+}
+
+
+#recent-locations li {
+    list-style: none;
+    width: 100%;
+    height: 35%;
+    margin-top: 1rem;
+    border-radius: 25px;
+    color: rgb(30, 48, 80);
+    /* border: 1px solid rgb(30, 48, 80, 0.8); */
+    background-color: rgb(101, 221, 239, 0.9);
+    cursor: pointer;
+}
+
+.location:hover {
+    background-color: rgb(101, 221, 239, 0.7);
+
+}
+
+#location-title {
+    text-align: center;
+    font-size: 1.9rem;
+
+}
+
+.location-temps {
+    display: flex;
+}
+
+.temp-min,
+.temp-max {
+    width: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+
+}
+
+.leaflet-popup .leaflet-popup-content-wrapper {
+    background-color: #66d3fa;
+    color: rgb(30, 48, 80);
+    border-radius: 15px;
+    padding-right: 0.6rem;
+}
+
+.leaflet-popup .leaflet-popup-content {
+    font-size: 1rem;
+}
+
+.leaflet-popup .leaflet-popup-tip {
+    background-color: #66d3fa;
+}
+
+
+/* forecast  */
+.forecasts {
+    height: 45%;
+    width: 95%;
+    /* border: 1px solid orange; */
+}
+
+.foretitle {
+    text-align: center;
+    margin: 1rem 0;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.forecast {
+    width: 95% !important;
+    height: 95%;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    /* border: 1px solid olivedrab; */
+
+
+}
+
+.forecast::-webkit-scrollbar {
+    width: 0;
+}
+
+.days {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 90%;
+    margin-left: 1rem;
+    border-radius: 20px;
+    background-color: rgb(102, 211, 250, 0.8);
+    /* border: 1px solid black; */
+
+}
+
+.daytitile {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.foredescripimg {
+    width: 80%;
+    height: 40%;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+
+}
+
+.foredescripimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.foredescrip {
+    text-align: center;
+    color: #fff;
+}
+
+.foretemp {
+    text-align: center;
+    margin: 1rem;
+    color: #fff;
+    font-size: 1.7rem;
+}
