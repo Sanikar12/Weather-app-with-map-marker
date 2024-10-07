@@ -433,3 +433,98 @@ body,
     color: #fff;
     font-size: 1.7rem;
 }
+
+.dark-mode {
+    background-color: black;
+    color: white; /* This sets the default text color to white for the whole .dark-mode */
+}
+
+.dark-mode .navbar {
+    color: white; /* This specifically sets the font color of the .navbar to white */
+}
+
+.dark-mode .days{
+    background-color: black
+}
+.dark-mode
+.wind-speed {
+    color: white;
+    width: 98%;
+    height: 38%;
+    margin-top: 9%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #66d3fa; */
+    background-color: rgba(3, 3, 3, 0.9);
+    
+    gap: 5px;
+}
+
+.dark-mode
+.humedity {
+    color: white;
+    width: 98%;
+    height: 38%;
+    margin-top: 9%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #66d3fa; */
+    background-color: rgba(3, 3, 3, 0.9);
+    
+    gap: 5px;
+}
+
+.dark-mode
+.pressure {
+  
+    width: 98%;
+    height: 38%;
+    margin-top: 9%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* backgFspanround-color: #66d3fa; */
+    background-color: rgba(3, 3, 3, 0.9);
+    
+    gap: 5px;
+}
+
+.dark-mode
+.visibility
+ {
+    
+    width: 98%;
+    height: 38%;
+    margin-top: 9%;
+    border-radius: 30px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #66d3fa; */
+    background-color: rgba(3, 3, 3, 0.9);
+    
+    gap: 5px;
+}
+.dark-mode .humedity span,
+.dark-mode .visibility span,
+.dark-mode .wind-speed span,
+.dark-mode .pressure span {
+    color: white; /* Change the font color to white for these elements in dark mode */
+}
+
+.one{
+    position:relative;
+    left:570px;
+    bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-align: center ;
+}

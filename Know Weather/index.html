@@ -29,12 +29,19 @@
         <!-- navbar -->
 
         <nav class="navbar">
+       
             <div class="search-container">
                 <input type="text" id="search-box" placeholder="search city here..">
-                <button id="btn"><img src="images/search.png" alt=""> </button>
+                <button id="btn"> <i class="fa-solid fa-moon"><img src="images/search.png" alt=""> </button>
+                    <button class="one" onclick="myFunction()"></button>
+               
+                
             </div>
+            
         </nav>
+      
         <div class="show-info">
+            
             <div class="map-card">
                 <div id="map"></div>
                 <div class="recent-view">
@@ -135,5 +142,11 @@
 
 
 </body>
+<script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
 
 </html>
